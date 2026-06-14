@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agro Sustentável Maringá - Agrinho 2026</title>
+  <title>Plantando o  amanhã</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🌱 Agro Sustentável Maringá</h1>
-    <p>Do campo pra tua mesa. Agrinho 2026</p>
+    <h1> Agronomia sustentavel 🚜🥕</h1>
+    <p></p>
   </header>
 
   <section class="sobre">
     <h2>Sobre o Projeto</h2>
-    <p>A agricultura sustentável cuida do solo, da água e das pessoas. 
-    Nosso projeto conecta o produtor rural direto com você, sem atravessadores.</p>
+  </p> 
+Identidade visual de Pesquisa do Copilot
+
+Curtir
+
+Não gosto
+A agricultura sustentável é um modelo de produção que integra produtividade, preservação ambiental e justiça social, garantindo alimentos para o presente sem comprometer as gerações futuras. 
+.</p>
   </section>
 
   <section class="produtos">

@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <title>Galeria - Minha Roça</title>
   <style>
-    body { font-family: Arial; background: #f5f5dc; padding: 20px; }
-    h1 { text-align: center; color: #2e7d32; }
-    .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 900px; margin: auto; }
-    .item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-    .item img { width: 100%; height: 200px; object-fit: cover; }
-    .item p { text-align: center; padding: 10px; margin: 0; font-weight: bold; color: #333; }
+    body { font-family: Arial; background: #f5f5dc; padding: 20px; margin: 0; }
+    h1 { text-align: center; color: #2e7d32; margin-bottom: 30px; font-size: 28px; }
+    .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: auto; }
+    .item { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.3s; }
+    .item:hover { transform: translateY(-5px); }
+    .item img { width: 100%; height: 230px; object-fit: cover; display: block; }
+    .item p { text-align: center; padding: 14px; margin: 0; font-weight: bold; color: #2e7d32; font-size: 17px; }
+    @media(max-width: 800px) { .galeria { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width: 500px) { .galeria { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -17,77 +20,77 @@
   <div class="galeria">
     
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1592924357228-91a4daadee15?w=500&h=500&fit=crop" alt="Tomate">
+      <img src="https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Tomate">
       <p>Foto 1: Tomate no pé</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500&h=500&fit=crop" alt="Limão">
+      <img src="https://images.pexels.com/photos/161559/limes-fruit-fresh-green-161559.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Limão">
       <p>Foto 2: Limão</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500&h=500&fit=crop" alt="Banana">
-      <p>Foto 3: Banana</p>
+      <img src="https://images.pexels.com/photos/1093034/pexels-photo-1093034.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Banana">
+      <p>Foto 3: Banana no cacho</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1596363502121-3c9e8e9b193f?w=500&h=500&fit=crop" alt="Uva">
-      <p>Foto 4: Uva</p>
+      <img src="https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Uva">
+      <p>Foto 4: Uva no pé</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1611080627980-c844733e5327?w=500&h=500&fit=crop" alt="Laranja">
+      <img src="https://images.pexels.com/photos/161559/orange-fruit-fresh-green-161559.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Laranja">
       <p>Foto 5: Laranja</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1528821128474-27d65483a5b0?w=500&h=500&fit=crop" alt="Melancia">
-      <p>Foto 6: Melancia</p>
+      <img src="https://images.pexels.com/photos/1084549/pexels-photo-1084549.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Melancia">
+      <p>Foto 6: Melancia na roça</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1594282487803-0e8ef2bc108f?w=500&h=500&fit=crop" alt="Couve">
+      <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Couve">
       <p>Foto 7: Couve</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1560493673-04071c5f467b?w=500&h=500&fit=crop" alt="Alface">
+      <img src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Alface">
       <p>Foto 8: Alface</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1508313880080-c4bef0730395?w=500&h=500&fit=crop" alt="Cebola">
+      <img src="https://images.pexels.com/photos/4197430/pexels-photo-4197430.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Cebola">
       <p>Foto 9: Cebola</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=500&h=500&fit=crop" alt="Cenoura">
-      <p>Foto 10: Cenoura</p>
+      <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Cenoura">
+      <p>Foto 10: Cenoura na terra</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=500&h=500&fit=crop" alt="Milho">
+      <img src="https://images.pexels.com/photos/208537/pexels-photo-208537.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Milho">
       <p>Foto 11: Milho no pé</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=500&h=500&fit=crop" alt="Alho">
+      <img src="https://images.pexels.com/photos/4199101/pexels-photo-4199101.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Alho">
       <p>Foto 12: Alho</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=500&h=500&fit=crop" alt="Couve-flor">
+      <img src="https://images.pexels.com/photos/1374496/pexels-photo-1374496.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Couve-flor">
       <p>Foto 13: Couve-flor</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&h=500&fit=crop" alt="Plantação">
+      <img src="https://images.pexels.com/photos/2935049/pexels-photo-2935049.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Plantação">
       <p>Foto 14: Plantação verde</p>
     </div>
 
     <div class="item">
-      <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop" alt="Trator">
+      <img src="https://images.pexels.com/photos/162948/tractor-farmer-farming-162948.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Trator">
       <p>Foto 15: Trator na roça</p>
     </div>
 

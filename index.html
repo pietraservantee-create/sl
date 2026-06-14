@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agro Sustentável Maringá - Agrinho 2026</title>
+  <title>Início - Agro Sustentável</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +11,11 @@
     <h2>🌱 AgroSustentável</h2>
     <ul>
       <li><a href="index.html">Início</a></li>
-      <li><a href="produtos.html">Produtos</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="comofunciona.html">Como Funciona</a></li>
+      <li><a href="beneficios.html">Benefícios</a></li>
+      <li><a href="produtos.html">Comprar</a></li>
     </ul>
-    <input type="text" id="busca" placeholder="Pesquisar...">
   </nav>
 
   <header>
@@ -23,51 +24,15 @@
   </header>
 
   <main>
-    <section class="galeria">
-      <h2>Galeria de Fotos</h2>
-      <div class="fotos">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Plantação">
-        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400" alt="Horta">
-        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400" alt="Colheita">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa6b1c7f1465?w=400" alt="Agricultor">
-      </div>
-    </section>
-
-    <section class="sobre">
-      <h2>Como Funciona</h2>
-      <p>A agricultura sustentável preserva o solo, usa menos água e garante comida saudável. Conectamos o produtor rural direto com você, valorizando quem planta em Maringá e região.</p>
-      <p>Desce a página pra ver mais conteúdo e clica no menu pra mudar de página 👇</p>
-    </section>
-
-    <section class="beneficios">
-      <h2>Benefícios</h2>
-      <ul>
-        <li>✅ Solo mais saudável e produtivo</li>
-        <li>✅ Água preservada pra próximas gerações</li>
-        <li>✅ Comida sem agrotóxico na tua mesa</li>
-        <li>✅ Renda justa pro produtor rural</li>
-      </ul>
+    <section>
+      <h2>Bem-vindo!</h2>
+      <p>Nosso projeto conecta produtores sustentáveis direto com você. Usa o menu acima pra navegar nas páginas 👆</p>
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800" alt="Campo">
     </section>
   </main>
 
   <footer>
-    <h2>Fale com o Produtor</h2>
-    <a href="https://wa.me/5544999999" class="btn">📱 WhatsApp</a>
     <p>© 2026 Projeto Agrinho</p>
   </footer>
-
-  <script>
-    // Função de busca simples
-    document.getElementById('busca').addEventListener('keyup', function() {
-      let termo = this.value.toLowerCase();
-      document.querySelectorAll('section').forEach(sec => {
-        if(sec.innerText.toLowerCase().includes(termo)) {
-          sec.style.display = 'block';
-        } else {
-          sec.style.display = 'none';
-        }
-      });
-    });
-  </script>
 </body>
 </html>

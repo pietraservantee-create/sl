@@ -3,12 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria - Agro Sustentável</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Galeria - Da Raiz ao Prato</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:Arial;background:#f0f9f0;color:#1a3a1a;line-height:1.6;}
+    nav {background:#2d6a2d;padding:15px;text-align:center;position:sticky;top:0;z-index:10;}
+    nav h2 {color:white;font-size:22px;margin-bottom:8px;}
+    nav ul {list-style:none;display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+    nav a {color:white;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;transition:0.3s;}
+    nav a:hover {background:#3e8e3e;}
+    main {max-width:1100px;margin:40px auto;padding:20px;}
+    .box {background:white;padding:35px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
+    .box h2 {color:#2d6a2d;margin-bottom:25px;font-size:32px;}
+    
+    /* Grid 3 fileiras x 5 colunas */
+    .galeria {
+      display:grid;
+      grid-template-columns:repeat(5, 1fr);
+      gap:15px;
+      margin-top:25px;
+    }
+    .galeria img {
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:10px;
+      border:3px solid #2d6a2d;
+      transition:0.3s;
+    }
+    .galeria img:hover {
+      transform:scale(1.05);
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* No celular fica 2 colunas */
+    @media(max-width:768px) {
+      .galeria {grid-template-columns:repeat(2, 1fr);}
+    }
+    
+    footer {background:#2d6a2d;color:white;text-align:center;padding:20px;margin-top:50px;}
+  </style>
 </head>
 <body>
   <nav>
-    <h2>🌱 AgroSustentável</h2>
+    <h2>Plantando o amanhã 🥕</h2>
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="galeria.html">Galeria</a></li>
@@ -19,19 +57,37 @@
   </nav>
 
   <main>
-    <section class="galeria">
-      <h2>Galeria de Fotos</h2>
-      <div class="fotos">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Plantação">
-        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400" alt="Horta">
-        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400" alt="Colheita">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa6b1c7f1465?w=400" alt="Agricultor">
-        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3ff5c34?w=400" alt="Trator">
-        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400" alt="Tomates">
+    <div class="box">
+      <h2>Nossa Galeria 📸</h2>
+      <p>Conheça um pouco da nossa roça e dos produtos frescos</p>
+      
+      <div class="galeria">
+        <!-- FILEIRA 1 -->
+        <img src="COLA_LINK_FOTO_1_AQUI" alt="Foto 1">
+        <img src="COLA_LINK_FOTO_2_AQUI" alt="Foto 2">
+        <img src="COLA_LINK_FOTO_3_AQUI" alt="Foto 3">
+        <img src="COLA_LINK_FOTO_4_AQUI" alt="Foto 4">
+        <img src="COLA_LINK_FOTO_5_AQUI" alt="Foto 5">
+        
+        <!-- FILEIRA 2 -->
+        <img src="COLA_LINK_FOTO_6_AQUI" alt="Foto 6">
+        <img src="COLA_LINK_FOTO_7_AQUI" alt="Foto 7">
+        <img src="COLA_LINK_FOTO_8_AQUI" alt="Foto 8">
+        <img src="COLA_LINK_FOTO_9_AQUI" alt="Foto 9">
+        <img src="COLA_LINK_FOTO_10_AQUI" alt="Foto 10">
+        
+        <!-- FILEIRA 3 -->
+        <img src="COLA_LINK_FOTO_11_AQUI" alt="Foto 11">
+        <img src="COLA_LINK_FOTO_12_AQUI" alt="Foto 12">
+        <img src="COLA_LINK_FOTO_13_AQUI" alt="Foto 13">
+        <img src="COLA_LINK_FOTO_14_AQUI" alt="Foto 14">
+        <img src="COLA_LINK_FOTO_15_AQUI" alt="Foto 15">
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer><p>© 2026 Projeto Agrinho</p></footer>
+  <footer>
+    <p>© 2026 Projeto Agrinho - Da Raiz ao Prato</p>
+  </footer>
 </body>
 </html>

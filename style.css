@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0faf0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre h2, .beneficios h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.sobre img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.beneficios {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.beneficios ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.beneficios li {
+  padding: 12px 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.btn {
+  background: #66bb6a;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8em; }
+  section { padding: 30px 15px; }
+}

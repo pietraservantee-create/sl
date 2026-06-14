@@ -2,12 +2,27 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Como Funciona - Agro Sustentável</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar - Da Raiz ao Prato</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:Arial;background:#f0f9f0;color:#1a3a1a;line-height:1.6;}
+    nav {background:#2d6a2d;padding:15px;text-align:center;position:sticky;top:0;z-index:10;}
+    nav h2 {color:white;font-size:22px;margin-bottom:8px;}
+    nav ul {list-style:none;display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+    nav a {color:white;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;transition:0.3s;}
+    nav a:hover {background:#3e8e3e;}
+    main {max-width:900px;margin:40px auto;padding:20px;}
+    .box {background:white;padding:35px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
+    .box h2 {color:#2d6a2d;margin-bottom:20px;font-size:32px;}
+    .btn-whats {display:inline-block;background:#25D366;color:white;padding:15px 40px;border-radius:10px;text-decoration:none;font-size:20px;font-weight:bold;margin-top:20px;transition:0.3s;}
+    .btn-whats:hover {background:#1ebe5b;transform:scale(1.05);}
+    footer {background:#2d6a2d;color:white;text-align:center;padding:20px;margin-top:50px;}
+  </style>
 </head>
 <body>
   <nav>
-    <h2>🌱 AgroSustentável</h2>
+    <h2>Plantando o amanhã 🥕</h2>
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="galeria.html">Galeria</a></li>
@@ -18,16 +33,21 @@
   </nav>
 
   <main>
-    <section>
-      <h2>Como Funciona a Agro Sustentável</h2>
-      <p>A agricultura sustentável preserva o solo, usa menos água e garante comida saudável sem agrotóxico.</p>
-      <p>1. O produtor planta usando técnicas que cuidam da terra</p>
-      <p>2. A gente conecta ele direto com você, sem atravessador</p>
-      <p>3. Você recebe alimento fresco e de qualidade em Maringá</p>
-      <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600" alt="Processo">
-    </section>
+    <div class="box">
+      <h2>Comprar Produtos da Raiz 🌱</h2>
+      <p style="font-size:18px;margin-bottom:15px">Fale direto com o produtor no WhatsApp</p>
+      <p>Produtos frescos, colhidos hoje em Maringá PR</p>
+      
+      <a class="btn-whats" href="https://wa.me/5544999999" target="_blank">
+        💬 Chamar no WhatsApp
+      </a>
+      
+      <p style="margin-top:20px;font-size:14px;color:#666">Troca o 5544999999 pelo teu número com DDD 44</p>
+    </div>
   </main>
 
-  <footer><p>© 2026 Projeto Agrinho</p></footer>
+  <footer>
+    <p>© 2026 Projeto Agrinho - Da Raiz ao Prato</p>
+  </footer>
 </body>
 </html>
